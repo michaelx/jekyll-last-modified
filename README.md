@@ -18,7 +18,7 @@ You can also use liquid objects within the tag:
 
 ### Production Example
 
-I’m using the plugin on [My Morning Routine](http://mymorningroutine.com) to use the last modified date for <lastmod> in our sitemap.xml:
+I’m using the plugin on [My Morning Routine](http://mymorningroutine.com) to use the last modified date for `<lastmod>` in our sitemap.xml:
 
 ```liquid
 <lastmod>{% capture lastmod_date %}{% last_modified {{ post.path }} %}{% endcapture %}{{ lastmod_date | date_to_xmlschema }}</lastmod>
